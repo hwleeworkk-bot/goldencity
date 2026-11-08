@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <title>0305_fancybox2</title>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="dist/jquery.fancybox.min.css" />
+  <script src="dist/jquery.fancybox.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	
+		$('.card-deck a').fancybox({
+		  caption : function( instance, item ) {
+			return $(this).parent().find('.card-text').html();
+		  }
+		});
+	
+	});//doc
+  </script>
+ </head>
+ <body>
+ <h2>Images Gallery</h2>
+ <!--  여러분이 좋아하는 이미지 4개를 팬시박스 갤러리로 표시
+ -->
+ 
+<p class="imglist" style="max-width: 520px;">
+  <a data-fancybox-trigger="preview" href="javascript:;">
+    <img src="https://source.unsplash.com/YontpP5LKaA/510x340" />
+  </a>
+
+  <a href="https://source.unsplash.com/YontpP5LKaA/1500x1000" data-fancybox="preview" data-width="1500" data-height="1000">
+    <img src="https://source.unsplash.com/YontpP5LKaA/120x80" />
+  </a>
+
+  <a href="https://source.unsplash.com/QbRbkNM4-kk/1500x1000" data-fancybox="preview" data-width="1500" data-height="1000">
+    <img src="https://source.unsplash.com/QbRbkNM4-kk/120x80" />
+  </a>
+  
+  <a href="https://source.unsplash.com/FrzRU75gtrA/1500x1000" data-fancybox="preview" data-width="1500" data-height="1000">
+    <img src="https://source.unsplash.com/FrzRU75gtrA/120x80" />
+  </a>
+  
+  <a href="https://source.unsplash.com/1U3FcR81vV4/1500x1000" data-fancybox="preview" data-width="1500" data-height="1000">
+    <img src="https://source.unsplash.com/1U3FcR81vV4/120x80" />
+  </a>
+</a>
+
+
+ <h2>Video Gallery</h2>
+ <!-- 유투브 또는 비메오의 동영상 4개를 팬시박스 동영상 갤러리로 표시 -->
+ 
+
+<div class="row mb-4">
+  <div class="card-deck col-9">
+
+    <div class="card">
+      <a data-fancybox href="https://www.youtube.com/watch?v=TKFg9D8Zb04">
+        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/TKFg9D8Zb04/mqdefault.jpg" />
+      </a>
+      <div class="card-body">
+        <p class="card-text">아기 진돗개의 똑똑함에 푹 빠져버린 미국 엄마</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a data-fancybox href="https://www.youtube.com/watch?v=8vAsg37pyC8">
+        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/8vAsg37pyC8/mqdefault.jpg" />
+      </a>
+      <div class="card-body">
+        <p class="card-text">새로 태어난 동생 옆을 떠나지 못하는 강아지</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=9XAvlUxxNxw">
+        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/9XAvlUxxNxw/mqdefault.jpg" />
+      </a>
+
+
+
+      <div class="card-body">
+        <p class="card-text">청소기로부터 아기를 지켜주는 강아지</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a data-fancybox href="https://www.youtube.com/watch?v=2p7B2MbaLsA">
+        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/2p7B2MbaLsA/mqdefault.jpg" />
+      </a>
+	  <div class="card-body">
+        <p class="card-text">어린 아이가 강아지를 오랫동안 안아보았습니다</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+ <h2>Login Modal </h2>
+<!--  <h3><a data-fancybox data-src="#selectableModal" href="javascript:;" class="btn btn-primary">Click Me</a></h3> -->
+ <!-- Click Me 단추를 클릭하면 모달에 로그인 화면이 표시되도록 함 -->
+
+     <div class="card">
+      <div class="card-body">
+        <p class="mb-0">
+          <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">Login</a>
+        </p>
+
+        <div style="display: none;" id="animatedModal" class="animated-modal">
+          <h2>ID</h2>
+		  <input type="text" >
+		  <br>
+          <h2>PW</h2>
+		  <input type="password">
+		  <br>
+		  <br>
+		<button class="log">Login</button>
+        </div>
+      </div>
+    </div>
+ 
+
+  <style>
+	body{text-align: center;}
+	p{margin-left: auto; margin-right: auto;}
+	.card-deck{margin-left: auto; margin-right: auto;}
+	.card{display: inline-block; width: 20%;}
+	.animated-modal h2{display: inline-block; width: 50px; line-height: 30px; margin: 10px 0;}
+	input{width: 100px; border-color: transparent transparent black transparent;}
+	.animated-modal  button.log{ width: 100%; text-align: center; padding: 10px 0; border: none; background: black; color: #fff;}
+  </style>
+ </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <title>favicon</title>
+ </head>
+ <body>
+  <h1>기본한글글꼴</h1>
+  <h1 class="po">에이포스터포스터포스터포스터</h1>
+  <style>
+  /*폰트*/
+  @font-face{
+		font-family:'aposter';
+		src:url("aposter/aposter.ttf"); 
+		src:url("aposter/aposter.eot");
+		src:url("aposter/KoreanPST-M.woff"); 
+		src:url("aposter/aposter.woff2"); 
+		}
+
+	.po{font-family: "a포스터M", "aposter";}
+  </style>
+
+  <h1>카카오맵_금호프라자</h1>
+  <div id="map" style="height:400px;"></div>
+	<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=aa6b395bf7069d7233456877198cc7cb"></script><!-- 로컬에서 보려면 http:// 필수기입 -->
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.657383, 127.062873),
+			level: 1 //3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(37.657383, 127.062873); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+	</script>
+
+
+	<h1>카카오맵_청와대</h1>
+	<div id="bluemap" style="height:400px;"></div>
+	<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=aa6b395bf7069d7233456877198cc7cb"></script><!-- 로컬에서 보려면 http:// 필수기입 -->
+	<script>
+		var container = document.getElementById('bluemap');
+		var options = {
+			center: new kakao.maps.LatLng(37.586846, 126.974832),
+			level: 3 //3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+		
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(37.586846, 126.974832); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+
+	</script>
+	
+	<h1>카카오맵_경주다보탑</h1>
+	<div id="dabo" style="height:400px;"></div>
+	<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=aa6b395bf7069d7233456877198cc7cb"></script><!-- 로컬에서 보려면 http:// 필수기입 -->
+		<script>
+		var mapContainer = document.getElementById('dabo'), // 지도를 표시할 div 
+			mapOption = { 
+				center: new kakao.maps.LatLng(35.790400, 129.332231), // 지도의 중심좌표
+				level: 3 // 지도의 확대 레벨
+			};
+
+		var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(35.790400, 129.332231); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+
+		// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+		// marker.setMap(null);    
+		</script>
+
+
+
+	<style>
+		#map{width: 100%;}
+		#bluemap, #dabo{width: 100%; height: 400px;
+			border: 2px solid magenta;}
+	</style>
+
+ </body>
+</html>

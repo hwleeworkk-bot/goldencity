@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+/* g2_templestay.css */
+
+/* web font----------------- */
+	
+	@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap');
+
+	/* 
+	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Serif KR', serif; 
+	*/
+
+
+/* .banner--------------- */
+
+/* .section--------------- */
+	.section{
+		margin-bottom: 30px;}
+	.section>.center{}
+
+
+   /* .title_box----------------------- */
+	.section>.center>.cont>.title_box{
+		width: 100%;
+		height: 117px;
+		background: url(img/templestay_title_bg.png) no-repeat;
+		margin-bottom: 30px;}
+	.section>.center>.cont>.title_box>.title{
+		width: 100%;
+		padding: 60px 30px 20px 30px;}
+	.section>.center>.cont>.title_box>.title>a{color: #fff;
+		font-family: 'Noto Serif KR', serif;
+		font-weight: normal;}
+
+   /* .title_cont--------------------- */
+	.section>.center>.cont>.title_cont{
+		overflow: hidden;
+		width: 100%;
+		height: 100px;
+		margin-bottom: 30px;}
+	.section>.center>.cont>.title_cont>.quote{
+		width: 5%;
+		height: 100%;
+		float: left;
+		background: url(img/quote.png) no-repeat;
+		background-position: 5px 0;}
+	.section>.center>.cont>.title_cont>p{
+		width:95%;
+		float:right;
+		padding-top: 7px;
+		font-family: 'Noto Serif KR', serif;
+		color: #4f4f4f;}
+
+	
+  /* .art----------------------- */
+
+	.section>.center>.cont>.art{
+		position: relative;}
+
+   /* .art_img--------------- */
+	.section>.center>.cont>.art>.art_img{
+		display: block;
+		width: 100%;
+		height: 220px;}
+
+   /* .art_text---------------- */
+	.section>.center>.cont>.art>.art_text{
+		overflow: hidden;
+		margin: 75px 0;}
+	.section>.center>.cont>.art>.art_text>.art_title{
+		width: 53%;
+		text-align: center;
+		font-size: 28px;
+		font-weight: bold;
+		color: #7a5731;}
+	.section>.center>.cont>.art1>.art_text>.art_title,
+	.section>.center>.cont>.art3>.art_text>.art_title,
+	.section>.center>.cont>.art5>.art_text>.art_title,
+	.section>.center>.cont>.art7>.art_text>.art_title{
+		float: left;}
+	.section>.center>.cont>.art2>.art_text>.art_title,
+	.section>.center>.cont>.art4>.art_text>.art_title,
+	.section>.center>.cont>.art6>.art_text>.art_title{
+		float: right;}
+
+   /* .art_cont---------------- */
+	.section>.center>.cont>.art>.art_text>.art_cont{
+		width: 47%;
+		color: #4f4f4f;
+		font-size: 14px;}
+	.section>.center>.cont>.art1>.art_text>.art_cont,
+	.section>.center>.cont>.art3>.art_text>.art_cont,
+	.section>.center>.cont>.art5>.art_text>.art_cont,
+	.section>.center>.cont>.art7>.art_text>.art_cont{
+		float: right;}
+	.section>.center>.cont>.art2>.art_text>.art_cont,
+	.section>.center>.cont>.art4>.art_text>.art_cont,
+	.section>.center>.cont>.art6>.art_text>.art_cont{
+		float: left;}
+
+	.section>.center>.cont>.art>.art_text>.art_cont>p{
+		margin-bottom: 15px;}
+	.section>.center>.cont>.art>.art_text>.art_cont>.hash{
+		display: none;
+		background: #f4f4f4;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		padding: 5px 10px;
+		font-size: 16px;
+		margin-right: 10px;
+		line-height: 20px;
+		transition: all 1s;}
+
+   /* .art_video---------------- */
+	.section>.center>.cont>.art>.art_video{
+		display: block;
+
+		position: absolute;
+		top: 100px;}
+	.section>.center>.cont>.art1>.art_video,
+	.section>.center>.cont>.art3>.art_video,
+	.section>.center>.cont>.art5>.art_video,
+	.section>.center>.cont>.art7>.art_video{
+		right: 140px;}
+	.section>.center>.cont>.art2>.art_video,
+	.section>.center>.cont>.art4>.art_video,
+	.section>.center>.cont>.art6>.art_video{
+		left: 140px;}
+	.section>.center>.cont>.art>.art_video>img{
+		width: 300px;
+		height: 170px;}
+	
+	
+   /* .art1----------------------- */
+	.section>.center>.cont>.art1{}
+	.section>.center>.cont>.art1>.art_img{
+		background: url(img/templestay01.png) no-repeat;}
+	.section>.center>.cont>.art1>.art_text{}
+	.section>.center>.cont>.art1>.art_text>.art_title{}
+	.section>.center>.cont>.art1>.art_text>.art_cont{}
+	.section>.center>.cont>.art1>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art1>.art_text>.art_cont>p{}
+
+   /* .art2----------------------- */
+	.section>.center>.cont>.art2{}
+	.section>.center>.cont>.art2>.art_img{
+		background: url(img/templestay02.png) no-repeat;}
+	.section>.center>.cont>.art2>.art_text{}
+	.section>.center>.cont>.art2>.art_text>.art_title{}
+	.section>.center>.cont>.art2>.art_text>.art_cont{}
+	.section>.center>.cont>.art2>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art2>.art_text>.art_cont>p{}
+
+   /* .art3----------------------- */
+	.section>.center>.cont>.art3{}
+	.section>.center>.cont>.art3>.art_img{
+		background: url(img/templestay03.jpg) no-repeat;}
+	.section>.center>.cont>.art3>.art_text{}
+	.section>.center>.cont>.art3>.art_text>.art_title{}
+	.section>.center>.cont>.art3>.art_text>.art_cont{}
+	.section>.center>.cont>.art3>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art3>.art_text>.art_cont>p{}
+
+   /* .art4----------------------- */
+	.section>.center>.cont>.art4{}
+	.section>.center>.cont>.art4>.art_img{
+		background: url(img/templestay04.jpg) no-repeat;}
+	.section>.center>.cont>.art4>.art_text{}
+	.section>.center>.cont>.art4>.art_text>.art_title{}
+	.section>.center>.cont>.art4>.art_text>.art_cont{}
+	.section>.center>.cont>.art4>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art4>.art_text>.art_cont>p{}
+
+   /* .art5----------------------- */
+	.section>.center>.cont>.art5{}
+	.section>.center>.cont>.art5>.art_img{
+		background: url(img/templestay05.png) no-repeat;}
+	.section>.center>.cont>.art5>.art_text{}
+	.section>.center>.cont>.art5>.art_text>.art_title{}
+	.section>.center>.cont>.art5>.art_text>.art_cont{}
+	.section>.center>.cont>.art5>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art5>.art_text>.art_cont>p{}
+
+   /* .art6----------------------- */
+	.section>.center>.cont>.art6{}
+	.section>.center>.cont>.art6>.art_img{
+		background: url(img/templestay06.png) no-repeat;}
+	.section>.center>.cont>.art6>.art_text{}
+	.section>.center>.cont>.art6>.art_text>.art_title{}
+	.section>.center>.cont>.art6>.art_text>.art_cont{}
+	.section>.center>.cont>.art6>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art6>.art_text>.art_cont>p{}
+
+   /* .art7----------------------- */
+	.section>.center>.cont>.art7{
+		border-bottom: 5px solid #A98048;}
+	.section>.center>.cont>.art7>.art_img{
+		background: url(img/templestay07.jpg) no-repeat;}
+	.section>.center>.cont>.art7>.art_text{}
+	.section>.center>.cont>.art7>.art_text>.art_title{}
+	.section>.center>.cont>.art7>.art_text>.art_cont{}
+	.section>.center>.cont>.art7>.art_text>.art_cont>h4{}
+	.section>.center>.cont>.art7>.art_text>.art_cont>p{}
+
+	
+/* .m_rec */
+	.m_rec{text-align: center;
+		display: none;}
+	.m_rec>.m_rec_tit{color: #273F24;
+		margin: 30px 0;}
+	.m_rec>.m_rec_cont{width: 80%;
+		margin: 10px auto;
+		border: 1px solid #999;
+		padding: 10px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		color: #4F4F4F;}
+	.m_rec>.m_rec_cont>h4{}
+	.m_rec>.m_rec_cont>p{}
+	.m_rec>.qna_btn{background: #273F24;
+		border: none;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		width: 90%;
+		height: 70px;
+		margin-top: 50px;}
+	.m_rec>.qna_btn>a{color: #fff;
+		font-size: 28px;
+		letter-spacing: 3px;
+		display: block;}
+
+
+
+	
+/* media query-------------------------------- */
+@media screen and (min-width: 960px){}/* 960 */
+@media screen and (max-width: 959px){
+   /* .art_video---------------- */
+	.section>.center>.cont>.art>.art_video{
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		margin-left: -180px;}
+	.section>.center>.cont>.art>.art_video>img	{
+		width: 360px;
+		height: 210px;}
+
+	.section>.center>.cont>.art>.art_text{
+		margin: 130px 0 80px 0;}
+	.section>.center>.cont>.art>.art_text>.art_title{
+		float: none;
+		width: 100%;}
+	
+	.section>.center>.cont>.art>.art_text>.art_cont{
+		float: none;
+		width: 70%;
+		margin: 30px auto;
+		text-align: center;}
+	.section>.center>.cont>.art>.art_text>.art_cont>h4{
+		margin: 20px 0 10px 0;}
+}/* 769~959 */
+
+@media screen and (max-width: 768px){
+	.section>.center>.cont>.title_cont{
+		height: 150px;}
+	.section>.center>.cont>.title_cont>.quote{
+		width: 8%;}
+	.section>.center>.cont>.title_cont>p{
+		width: 92%;}
+}/* 481~768 */
+
+@media screen and (max-width: 480px){
+
+	.center{width:100%;
+		padding: 0;}
+
+	.section>.center>.cont{}
+	.section>.center>.cont>.title_box{display: none;}
+	.section>.center>.cont>.title_cont{
+		padding: 30px 0;
+		height: 100%;}
+	.section>.center>.cont>.title_cont>.quote{
+		float: none;
+		width: 100%;
+		height: 30px;
+		background-position: center center;}
+	.section>.center>.cont>.title_cont>p{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		font-family: 'Noto Sans KR';
+		font-size: 20px;
+		
+		text-align: center;}
+	.section>.center>.cont>.title_cont>p>.no480{
+		display: none;}
+	.section>.center>.cont>.title_cont>p>.brown{
+		color: #A98048;}
+	
+	.section>.center>.cont>.art>.art_text{margin: 0 0 50px 0;
+		height: 100%;
+		padding-bottom: 10px;}
+	.section>.center>.cont>.art>.art_text>.art_title{display: none;}
+	.section>.center>.cont>.art>.art_text>.art_cont{
+		margin: 0;
+		padding: 0 20px;
+		width: 100%;
+		text-align: justify;
+		font-size: 18px;}
+	.section>.center>.cont>.art>.art_text>.art_cont>.hash{
+		display: inline-block;}
+
+
+	.section>.center>.cont>.art>.art_video{display: none;}
+
+
+	.section>.center>.cont>.art2,
+	.section>.center>.cont>.art3,
+	.section>.center>.cont>.art7{display: none;}
+
+	.m_rec{display: block;}
+	
+}/* 361~480 */
+@media screen and (max-width: 360px){}/* 360~479 */

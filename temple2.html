@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Golden Templestay</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="temple2.css">
+  <link rel="stylesheet" href="g_font_face.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="swiper-master/package/css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="fancybox-master/fancybox-master/dist/jquery.fancybox.min.css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="bxslider/src/js/jquery.bxslider.js"></script>
+  <script src="swiper-master/package/js/swiper.min.js"></script>
+  <script src="fancybox-master/fancybox-master/dist/jquery.fancybox.min.js"></script>
+  <script src="goldencity.js"></script>
+  <script>
+	$(document).ready(function(){
+
+			slider1 =$('.bxslider').bxSlider({
+			  pager: true,
+			  controls: false,
+			  auto: true,
+			  autoHover: true,
+			  slideMargin: 0,
+			  //touchEnabled : (navigator.maxTouchPoints > 0),
+			  //auto: false,
+			  //autoHover: true
+			});
+
+			slider2 =$('.bxslider2').bxSlider({
+			  pager: false,
+			  auto: true,
+			  controls: false,
+			  //autoHover: true,
+			  slideMargin: 0,
+			  //touchEnabled : (navigator.maxTouchPoints > 0),
+			  //auto: false,
+			  //autoHover: true
+			});
+
+
+			
+			$(window).resize(function(){
+				slider1.reloadSlider();
+				slider2.reloadSlider();
+			});//
+
+	
+	});//doc
+  </script>
+ </head>
+ <body id="top">
+	<header class="header">
+		<div class="center">
+			<h1 class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+
+			<ul class="top_menu">
+				<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">로그인<span>|</span></a></li>
+				<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">회원가입<span>|</span></a></li>
+				<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">마이페이지</a></li>
+			</ul>
+			
+			<input type="checkbox" name="drawer" id="drawer">
+			<input type="checkbox" name="search" id="search">
+			<div class="ra_label">
+				<label for="drawer"></label>
+				<label for="search"></label>
+			</div>
+
+			<ul class="drawer_box">
+				<li><a href="index.html"><img src="img/text_logo.png" alt=""></a></li>
+				<li><a href="templestay.html">템플스테이</a></li>
+				<li><a href="temple1.html">사찰</a>
+					<ul>
+						<li><a href="temple1.html">불국사</a></li>
+						<li><a href="temple2.html">기림사</a></li>
+						<li><a href="temple3.html">골굴사</a></li>
+					</ul>
+				</li>
+				<li><a href="book.html">예약하기</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+			</ul>
+
+			<div class="m_drawer_btn"></div>
+			
+			
+			<div class="m_drawer_bg">
+				<div class="m_close_btn"></div>			
+			</div><!-- m_drawer_bg -->
+			<ul class="m_drawer_box">
+					<li><a href="templestay.html">템플스테이</a></li>
+					<li><a href="temple1.html">사찰</a>
+						<ul>
+							<li><a href="temple1.html">불국사</a></li>
+							<li><a href="temple2.html">기림사</a></li>
+							<li><a href="temple3.html">골굴사</a></li>
+						</ul>
+					</li>
+					<li><a href="book.html">예약하기</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+					<li>
+						<ul class="m_top_menu">
+							<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">로그인</a></li>
+							<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">회원가입</a></li>
+							<li><a href="javascript: void(0);"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">마이페이지</a></li>
+						</ul><!-- m_top_menu -->
+					</li>
+				</ul><!-- m_drawer_box -->
+
+			
+
+			<div class="search_box">
+				<input type="text" placeholder="검색어를 입력하세요.">
+				<button><img src="img/icon_search_box.png" alt=""></button>
+			</div>
+
+			<ul class="gnb">
+				<li ><a href="templestay.html">템플스테이</a>
+					<div class="tri"></div>
+				</li>
+				<li class="active"><a href="temple1.html">사찰</a>
+					<div class="tri"></div>
+					<ul class="sub">
+						<li><a href="temple1.html">불국사<img src="img/sub01.png"  alt=""></a></li>
+						<li><a href="temple2.html">기림사<img src="img/sub02.png" alt=""></a></li>
+						<li><a href="temple3.html">골굴사<img src="img/sub03.png" alt=""></a></li>
+					</ul>
+				</li>
+				<li><a href="book.html">예약하기</a>
+					<div class="tri"></div>
+				</li>
+				<li><a href="shop.html">SHOP</a>
+					<div class="tri"></div>
+				</li>
+				<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a>
+					<div class="tri"></div>
+				</li>
+			<ul><!-- gnb -->
+
+		</div><!-- center -->
+	</header>
+	<div class="banner"></div>
+
+
+	<section class="section">
+			<div class="m_cnb_wrap">
+				<i class="material-icons">expand_more</i>
+				<ul class="m_cnb">	
+					<li><a href="javascript:void(0);">기림사</a></li>
+					<li class="slide">
+						<ul>
+							<li><a href="temple1.html">불국사</a></li>
+							<li><a href="temple3.html">골굴사</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- m_cnb_wrap -->
+		<div class="center">
+			<div class="lnb_wrap">
+				<div class="lnb_title">
+					<a href="temple1.html"></a>
+				</div>
+				<ul class="lnb">
+					<li><a href="temple1.html">불국사<span>Bulguksa</span></a></li>
+					<li class="active"><a href="temple2.html">기림사<span>Girimsa</span></a></li>
+					<li><a href="temple3.html">골굴사<span>Golgulsa</span></a></li>
+				</ul><!-- lnb -->
+			</div><!-- lnb_wrap -->
+			<div class="art_wrap">
+				<div class="cnb_wrap">
+					<ul class="cnb">
+						<li><a href="index.html">HOME</a>&nbsp;>&nbsp;</li>
+						<li><a href="temple1.html">사찰</a>&nbsp;>&nbsp;</li>
+						<li><a href="temple2.html">기림사</a></li>
+					</ul><!-- cnb -->
+				</div><!-- cnb_wrap -->
+				
+				<article class="m_art">
+					<div class="img_box">
+						<ul class="img_slider  bxslider2">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul><!-- img_slider -->
+						<div class="img_name">
+							<p>2000년의 숨결</p>
+							<h1>기림사</h1>
+						</div><!-- img_name -->
+					</div><!-- img_box -->
+					<div class="img_exp">
+						<p>2000년 역사와 문화를 면면히 이어온</p>
+						<h1>기림사</h1>
+					</div>
+					<div class="gall_wrap">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide"><a href="img/gi06.png" data-fancybox='gallery'><img src="img/gi06.png" alt="Slide 1"></a></div>
+							  <div class="swiper-slide"><a href="img/gi02.png" data-fancybox='gallery'><img src="img/gi02.png"  alt=""></a></div>
+							  <div class="swiper-slide swiper-slide"><a href="img/gi01.png" data-fancybox='gallery'><img src="img/gi01.png"  alt=""></a></div>
+							  <div class="swiper-slide"><a href="img/gi04.png" data-fancybox='gallery'><img src="img/gi04.png"  alt=""></a></div>
+							  <div class="swiper-slide"><a href="img/gi03.png" data-fancybox='gallery'><img src="img/gi03.png"  alt=""></a></div>
+							</div>
+						</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+
+							<script>
+								var swiper = new Swiper('.swiper-container', {
+								  slidesPerView: 1.6,
+								  spaceBetween: 20,
+								  centeredSlides: true,
+								  loop: true,
+								  pagination: {
+									el: '.swiper-pagination',
+									clickable: true,
+								  },
+								});
+							</script>
+						<div class="exp_title">
+							<p>01</p>
+							<h3>약사전</h3>
+						</div><!-- exp_title -->
+						<p class="exp_text">약사전 내벽에는 인도 사라수왕이 부처님께 오종수로 차공양을 올리는 헌다벽화가 그려져 있습니다. 고려시대에는 각유선사가 주석하면서 향화를 올렸고, 조선시대에는 대적광전과 대적광전안의 소조불상, 불상안의 복장유물, 건칠보살반가상 등이 조성되어 현재 보물로 지정되어 있으며, 특히 불조사찰로서 명실공히 자리매김한 유서 깊은 사찰입니다. 현재는 불국사의 수말사이자 교육 도량으로 '불국금강학림'과 '불국성림율원'을 통해 역량 있고 눈푸른 납자를 배출하며 한국불교 중흥을 도모하고 있는 교육 도량이기도 합니다. </p>
+					</div><!-- gall_wrap -->
+				</article><!-- m_art -->
+
+				<div class="blank"></div>
+
+
+				<article class="art art1">
+					<h2 class="art_title">기림사</h2>
+					<div class="slider_wrap">
+						<ul class="img_slider   bxslider">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul><!-- img_slider -->
+					</div>
+					<ul class="slide_pointer">
+						<li class="active_pointer"><a href="javascript: void(0);"></a></li>
+						<li><a href="javascript: void(0);"></a></li>
+						<li><a href="javascript: void(0);"></a></li>
+					</ul>
+					<ul class="ex">
+						<li></li>
+						<li><h4>2000년의 향기 기림사</h4>
+							<br>
+							기림사는 신라시대 당시 인도에서 바닷길을 따라오신 광유선사께서 ‘임정사’라는 사명으로 창건하셨으며, 이후 원효대사가 중창하시면서 ‘기림사’라 개칭하였습니다.<br><br>
+
+							기림사에는 이러한 유구한 역사와 다량의 유물을 소장한 박물관이 있습니다. 오백나한전과 과거, 현재, 미래 천불을 모신 삼천불전 그리고 소조불상과 시왕님들을 모신 명부전은 영험하기로 아주 유명합니다.</li>
+					</ul>
+				</article><!-- art1 -->
+				<article class="art art2">
+					<h2 class="art_title">체험후기</h2>
+					<ul class="review_list">
+						<li>
+							<a href="javascript:void(0);">Life changing experience in South Korea... Thank you!</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/12/16 19:13</span>
+						</li>
+						<li>
+							<a href="javascript:void(0);">넘 좋았어요</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/12/10 19:13 </span>
+						</li>
+						<li>
+							<a href="javascript:void(0);">정신수양을 위해 어쩌구 저쩌구</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/11/20 19:13</span>
+						</li>
+						<li>
+							<a href="javascript:void(0);">어지러운 머리를... 어쩌구 저쩌구...</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/09/16 19:13</span>
+						</li>
+						<li>
+							<a href="javascript:void(0);">명상의 힘 어쩌구 저쩌구..</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/08/16 19:13</span>
+						</li>
+						<li>
+							<a href="javascript:void(0);">사찰음식이 맛있었어요</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2019/07/16 19:13 </span>
+						</li>
+						<li>	
+							<a href="javascript:void(0);">배고프다 마라탕 먹고싶다</a>
+							<div class="w_wrap">
+								<span class="writer">이혜원</span>
+								<span class="more"><a href="http://rosie52486.dothome.co.kr/xe/gqna">MORE</a></span>
+							</div>
+							<span class="date">2018/05/17 19:13 </span>
+						</li>
+					</ul>
+					<div class="detail"><a href="http://rosie52486.dothome.co.kr/xe/gqna">자세히 보기</a></div>
+				</article><!-- art2 -->
+
+				<article class="art art3">
+					<h2 class="art_title">오시는 길</h2>
+					<div id="map400" style="height:400px;"></div>
+						<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=aa6b395bf7069d7233456877198cc7cb"></script>
+							<script>
+							var mapContainer = document.getElementById('map400'), // 지도를 표시할 div 
+								mapOption = { 
+									center: new kakao.maps.LatLng(35.838035, 129.403422), // 지도의 중심좌표
+									level: 3 // 지도의 확대 레벨
+								};
+
+							var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+							// 마커가 표시될 위치입니다 
+							var markerPosition  = new kakao.maps.LatLng(35.838035, 129.403422); 
+
+							// 마커를 생성합니다
+							var marker = new kakao.maps.Marker({
+								position: markerPosition
+							});
+
+							// 마커가 지도 위에 표시되도록 설정합니다
+							marker.setMap(map);
+
+							// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+							// marker.setMap(null);    
+							</script>
+					<ul class="map_text">
+						<li><a href="javascript: void(0);">주소 : 경상북도 경주시 양북면 기림로 437-17</a></li>
+						<li><a href="javascript: void(0);">전화 : 054-741-6536</a></li>
+					</ul>
+				</article><!-- art3 -->
+			</div><!-- cont -->
+		</div><!-- center -->
+	</section>
+
+
+	<footer class="footer">
+		<div class="center">
+			<div class="footer_top">
+				<h1 class="footer_logo"><a href="index.html"></a></h1>
+				<ul class="m_about">
+					<li><a href="javascript: void(0);">템플스테이 홍보관 : 02-938-1119</a></li>
+					<li><a href="mailto:hwlee1210@naver.com">이메일 : goldentemplestay@gmail.com</a></li>
+					<li><a href="https://v4.map.naver.com/local/siteview.nhn?code=60645536">주소: 서울특별시 노원구 상계동 357-2</a></li>
+				</ul>
+				<ul class="about">
+					<li><a href="mailto:hwlee1210@naver.com" title="이메일 문의"><img src="img/icon_mail.png" alt="">goldentemplestay@gmail.com</a></li>
+					<li><a href="javascript: void(0);" title="전화 문의"><img src="img/icon_phone.png" alt="" >02-938-1119</a></li>
+					<li><a href="https://v4.map.naver.com/local/siteview.nhn?code=60645536" target="_blank" title="지도 보기"><img src="img/icon_map.png" alt="">서울특별시 노원구 상계동 357-2</a></li>
+				</ul>
+				<ul class="footer_gnb">
+					<li><a href="templestay.html">템플스테이</a></li>
+					<li><a href="temple1.html">사찰</a>
+						<ul>
+							<li><a href="temple1.html">불국사</a></li>
+							<li><a href="temple2.html">기림사</a></li>
+							<li><a href="temple3.html">골굴사</a></li>
+						</ul>
+					</li>
+					<li><a href="book.html">예약하기</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+				</ul>
+			</div><!-- footer_top -->
+			<div class="footer_bottom">
+				<ul class="personal">
+					<li><a href="javascript: void(0);">소개<span>|</span></a></li>  
+					<li><a href="javascript: void(0);">저작권 안내<span>|</span></a></li>
+					<li><a href="javascript: void(0);">개인정보 처리방침<span>|</span></a></li>
+					<li><a href="javascript: void(0);">이용약관<span>|</span></a></li>
+					<li><a href="javascript: void(0);">FAQ<span>|</span></a></li>
+					<li><a href="javascript: void(0);">연락처</a></li>
+				</ul>
+				<p class="copy">
+					Copyright 2020 &copy; Golden Templestay. All Rights Reserved.
+				</p>
+			</div><!-- footer_bottom -->
+		</div><!-- center -->
+	</footer>
+	<div class="top_button"><a href="#top">▲TOP</a></div>
+
+	
+        <div style="display: none;" id="animatedModal" class="animated-modal">
+          <input type="text" placeholder="아이디 입력"><br>
+          <input type="password" placeholder="비밀번호 입력"><br>
+		  <button class="login">로그인</button><br>
+		  <ul class="signin">
+			<li><a href="">회원가입</a></li>
+			<li><a href="">아이디 찾기</a></li>
+			<li><a href="">비밀번호  찾기</a></li>
+		  </ul>
+        </div>
+
+ </body>
+</html>

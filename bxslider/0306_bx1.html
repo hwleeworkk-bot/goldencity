@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <title>0306_bx1</title>
+  
+	<link rel="stylesheet" href="src/css/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="src/js/jquery.bxslider.js"></script>
+
+ </head>
+ <body>
+	<script>
+		  $(document).ready(function(){
+			  w =$(window).width();
+			  console.log(w)
+			  $(window).resize(function(){
+				w =$(window).width();
+			  })
+
+			  $('.slider').bxSlider();
+
+		 
+			  $('.bxslider').bxSlider({
+				mode: 'vertical',//'fade', 'horizontal', 
+				speed: 300,
+				captions: false, //true
+				slideWidth: w,
+
+				auto: true,
+				autoControls: true, //play, pause
+				stopAutoOnClick: true,
+				pager: true, //false pagination
+				controls: false, //prev, next
+				pause: 500, 
+				autoHover: true
+			  });
+			
+		  });
+	</script>
+	<h1>basic</h1>
+	<div class="slider">
+	  <div>I am a slide.</div>
+	  <div>I am another slide.</div>
+	</div>
+
+	<h1>image gallery</h1>
+	<div class="bxslider">
+	  <div><img src="img/coffee1.jpg" title="Funky roots"></div>
+	  <div><img src="img/coffee2.jpg" title="The long and winding road"></div>
+	  <div><img src="img/coffee3.jpg" title="Happy trees"></div>
+	</div>
+ </body>
+</html>

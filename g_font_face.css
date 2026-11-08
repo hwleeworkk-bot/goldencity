@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* g_font_face------------------------------------- */
+	@font-face{
+		font-family:'NotoSansKR-Regular-Alphabetic';
+		src:url("font/NotoSansKR-Regular-Alphabetic.ttf"); 
+		src:url("font/NotoSansKR-Regular-Alphabetic.eot");
+		src:url("font/NotoSansKR-Regular-Alphabetic.woff"); 
+		src:url("font/NotoSansKR-Regular-Alphabetic.woff2"); 
+		}
+
+	@font-face{
+		font-family:'NotoSerifKR-Regular-Alphabetic';
+		src:url("font/NotoSerifKR-Regular-Alphabetic.ttf"); 
+		src:url("font/NotoSerifKR-Regular-Alphabetic.eot");
+		src:url("font/NotoSerifKR-Regular-Alphabetic.woff"); 
+		src:url("font/NotoSerifKR-Regular-Alphabetic.woff2"); 
+		}

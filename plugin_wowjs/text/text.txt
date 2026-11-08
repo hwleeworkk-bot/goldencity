@@ -1,0 +1,72 @@
+------- wowjs ------------------
+1. HTML
+HOW TO USE? 
+GITHUB
+
+wow.js
+Reveal Animations When You Scroll. Very Animate.css Friend :-) 
+Easily customize animation settings: style, delay, length, offset, iterations... 
+100% MIT Licensed, not GPL. Keep your code yours. 
+ES2015+, naturally Caffeine free.
+
+such easy
+very ES
+
+WOW
+
+no jquery
+many anims
+
+aint GPL
+
+how small
+3 KiB only
+
+just scroll
+
+reveal now
+so impress
+
+WOW
+
+no jquery?!
+that sucks!
+
+Licensed under the MIT License:
+ MIT License
+See wow.js revealing animations on these websites:
+* Aerolab * 
+* Streamline Icons * 
+* Box Notes * 
+* Rock Band 4 *
+
+Free to use and modify wow.js under the MIT License:
+If you want to use wow.js to develop commercial sites, themes, projects, and applications you are 100% free to do so! Your source code is kept proprietary. Just remember to include the entire contents of The MIT Licenses in your product.
+
+wow.js MIT
+Free
+License
+For ¡Ä Project
+FREE!
+wow.js MIT Deluxe
+Free XL
+License
+For ¡Ä Unlimited ¡Ä Projects
+EVEN MORE FREE!
+Checkout my other projects!
+* SQLAlchemy Redshift *
+* SlimerJS NPM bundler *
+Installing wow.js takes only seconds: Read the documentation
+Developed by Matt Aussaguel ? Forked to remain under the MIT license by Thomas Grainger ? Initiated & Designed by Webalys
+
+Contributed by Attila Olah
+CSS animations powered by wow.js and Animate.css
+------------------------------------------
+2. 
+container: 940px
+div : 220
+con : 200
+
+
+
+

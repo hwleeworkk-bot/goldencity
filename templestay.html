@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Golden Templestay</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="templestay.css">
+  <link rel="stylesheet" href="g_font_face.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="plugin_wowjs/css/libs/animate.css" />
+  <link rel="stylesheet" href="fancybox-master/fancybox-master/dist/jquery.fancybox.min.css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="goldencity.js"></script>
+  <script src="plugin_wowjs/dist/wow.js"></script>
+  <script src="fancybox-master/fancybox-master/dist/jquery.fancybox.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		if($(window).width() <481) { 
+			
+				$(".section>.center>.cont>.title_cont>p>.br").html("<br>");
+			}//if 480
+
+		$(window).resize(function() { 
+			
+			if($(window).width() <481) { 
+			
+				$(".section>.center>.cont>.title_cont>p>.br").html("<br>");
+			}//if 480
+		
+		});//resize
+
+		 $('.card-deck a').fancybox({
+		  caption : function( instance, item ) {
+			return $(this).parent().find('.card-text').html();
+		  }
+		});
+
+
+	});//doc
+  </script>
+ </head>
+ <body id="top">
+	<header class="header">
+		<div class="center">
+			<h1 class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+
+			<ul class="top_menu">
+				<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">로그인<span>|</span></a></li>
+				<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">회원가입<span>|</span></a></li>
+				<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">마이페이지</a></li>
+			</ul>
+			
+			<input type="checkbox" name="drawer" id="drawer">
+			<input type="checkbox" name="search" id="search">
+			<div class="ra_label">
+				<label for="drawer"></label>
+				<label for="search"></label>
+			</div>
+
+			<ul class="drawer_box">
+				<li><a href="index.html"><img src="img/text_logo.png" alt=""></a></li>
+				<li><a href="templestay.html">템플스테이</a></li>
+				<li><a href="temple1.html">사찰</a>
+					<ul>
+						<li><a href="temple1.html">불국사</a></li>
+						<li><a href="temple2.html">기림사</a></li>
+						<li><a href="temple3.html">골굴사</a></li>
+					</ul>
+				</li>
+				<li><a href="book.html">예약하기</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+			</ul>
+
+			<div class="m_drawer_btn"></div>
+			
+			
+			<div class="m_drawer_bg">
+				<div class="m_close_btn"></div>			
+			</div><!-- m_drawer_bg -->
+			<ul class="m_drawer_box">
+					<li><a href="templestay.html">템플스테이</a></li>
+					<li><a href="temple1.html">사찰</a>
+						<ul>
+							<li><a href="temple1.html">불국사</a></li>
+							<li><a href="temple2.html">기림사</a></li>
+							<li><a href="temple3.html">골굴사</a></li>
+						</ul>
+					</li>
+					<li><a href="book.html">예약하기</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+					<li>
+						<ul class="m_top_menu">
+							<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">로그인</a></li>
+							<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">회원가입</a></li>
+							<li><a href="#"  data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn btn-primary">마이페이지</a></li>
+						</ul><!-- m_top_menu -->
+					</li>
+				</ul><!-- m_drawer_box -->
+
+			
+
+			<div class="search_box">
+				<input type="text" placeholder="검색어를 입력하세요.">
+				<button><img src="img/icon_search_box.png" alt=""></button>
+			</div>
+
+			<ul class="gnb">
+				<li class="active"><a href="templestay.html">템플스테이</a>
+					<div class="tri"></div>
+				</li>
+				<li><a href="temple1.html">사찰</a>
+					<div class="tri"></div>
+					<ul class="sub">
+						<li><a href="temple1.html">불국사<img src="img/sub01.png"  alt=""></a></li>
+						<li><a href="temple2.html">기림사<img src="img/sub02.png" alt=""></a></li>
+						<li><a href="temple3.html">골굴사<img src="img/sub03.png" alt=""></a></li>
+					</ul>
+				</li>
+				<li><a href="book.html">예약하기</a>
+					<div class="tri"></div>
+				</li>
+				<li><a href="shop.html">SHOP</a>
+					<div class="tri"></div>
+				</li>
+				<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a>
+					<div class="tri"></div>
+				</li>
+			<ul><!-- gnb -->
+		
+		</div><!-- center -->
+	</header>
+	
+
+	<div class="banner"></div>
+
+
+	<section class="section">
+		<div class="m_cnb_wrap">
+				<ul class="m_cnb">
+					<li><a href="templestay.html">템플스테이 소개</a></li>
+				</ul>
+		</div><!-- m_cnb_wrap -->
+		
+		<div class="center">
+			
+			<div class="cnb_wrap">
+				<ul class="cnb">
+					<li><a href="index.html">HOME</a>&nbsp;>&nbsp;</li>
+					<li><a href="templestay.html">템플스테이</a></li>
+				</ul><!-- cnb -->
+			</div><!-- cnb_wrap -->
+			<div class="cont">
+				<div class="title_box">
+					<h1 class="title"><a href="templestay.html">템플스테이란</a></h1>
+				</div>
+				<div class="title_cont  wow  fadeInDown" data-wow-duration='2s'>
+					<div class="quote"></div>
+					<p><span class="no480 ">
+						떠나고 싶을 때, 쉬고 싶을 때 우리가 꿈꾸는 바로 그 여행<br>
+						떠나고 싶습니다. 쉬고 싶습니다. 혼자여도 좋고, 함께라면 더욱 좋습니다.<br>
+						대한민국 구석구석 </span>아름다운 산사에서 만나는 특별한 휴식 <span class="br"></span><span class="brown">템플스테이</span>는 삶의 쉼표가 필요할 때<span class="br"></span> 마음이 쉬어가는 곳입니다.
+					</p>
+				</div>
+				<article class="art art1">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>
+							01<br>사찰안내
+						</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>불교의 전통과 문화를 느끼는 시간</h4>
+							<p>사찰순례는 단순히 불교사원을 방문해 보는 것이 아니라 살아 숨쉬는 불교의 전통과 문화를 느끼고 배우는 불교 전통문화 순례의 길이 될 것입니다. 사찰의 구조와 건축, 조각, 공예, 단청 등 각종 불교 문화재들은 부처님의 가르침과 민족의 전통을 오롯이 간직하고 있기에 사찰순례를 통하여 이러한 의미와 아름다움을 음미해 보는 경험을 해보는 것입니다.</p>
+							<span class="hash">#불교</span>	
+							<span class="hash">#사찰</span>	
+							<span class="hash">#연등</span>	
+							<span class="hash">#순례의길</span>	
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=hu6GtpPAdWQ" class="art_video  wow  fadeInRight" data-fancybox ><img src="http://img.youtube.com/vi/hu6GtpPAdWQ/mqdefault.jpg" alt=""></a>
+				</article>
+				<article class="art art2">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>
+							02<br>참선 및 명상
+						</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>고요한 사유, 참선</h4>
+							<p>참선은 한국불교의 중심이 되는 수행법입니다. 템플스테이 참가자들은 일상에서 벗어나 자신의 내면과 마주하며 스스로를 되돌아보는 성찰 과정을 통해 보다 밝고 긍정적인 삶을 살아갈 수 있는 힘을 얻을 수 있습니다.</p>
+							<h4>몸의 깨달음, 명상</h4>
+							<p>우리 시대 최고의 CEO 스티브 잡스, 농구의 전설 마이클 조던, 비틀스의 존 레논, 영화배우 리처드 기어의 공통점은 무엇일까? 바로 꾸준히 명상을 했다는 사실입니다. 청량한 숲과 계곡, 맑은 공기 등 사찰을 둘러싸고 있는 자연환경은 도시에서 지나치게 흥분되어 있는 오감을 안정시켜 주는 명상을 하기에 최적의 조건을 가지고 있습니다.</p>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=nel6aVe3kiY" class="art_video  wow  fadeInLeft" data-fancybox ><img src="http://img.youtube.com/vi/nel6aVe3kiY/mqdefault.jpg" alt=""></a>
+				</article>
+				<article class="art art3">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>03<br>스님과의 차담</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>따뜻한 위로가 담긴 차 한 잔, 차담 & 다도</h4>
+							<p>일반적인 생활과 달리 수행을 하는 스님과 마주앉아 대화를 나누는 것은 템플스테이가 주는 아주 특별한 경험 중의 하나입니다. 우리나라 전통문화의 보고인 불교 문화에 대한 궁금증뿐만 아니라 살아가면서 겪게 되는 고민과 갈등에 대해 특별한 주제 없이 편안하게 이야기를 나눌 수 있습니다. 스님과 함께 차 한 잔을 나누는 차담은 템플스테이에서도 가장 의미 있는 시간이기도 합니다.</p>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=0e30fiknWns" class="art_video  wow  fadeInRight" data-fancybox ><img src="http://img.youtube.com/vi/0e30fiknWns/mqdefault.jpg" alt=""></a>
+				</article><!-- art3 -->
+
+				<article class="art art4">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>04<br>발우공양</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>수행자의 지혜가 담긴 식사법, 발우공양</h4>
+							<p>발우는 절에서 스님들이 사용하는 전통 식기를 말합니다. 발우를 이용하여 전통적인 의식에 따라 식사하는 것을 '발우공양'이라고 하는데, 발우공양은 음식이 우리에게 오기까지 수고로움을 아끼지 않은 수많은 이들에 대한 고마움과 자연에 대한 감사의 마음 그리고 쌀 한 톨도 낭비하지 않겠다는 절약의 정신이 담겨 있는 지혜의 식사법입니다.</p>
+							<span class="hash">#식사</span>	
+							<span class="hash">#감사</span>	
+							<span class="hash">#절약</span>	
+							<span class="hash">#발우공양</span>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=1OSpaWAAKYk" class="art_video  wow  fadeInLeft" data-fancybox ><img src="http://img.youtube.com/vi/1OSpaWAAKYk/mqdefault.jpg" alt=""></a>
+				</article><!-- art4 -->
+
+				<article class="art art5">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>05<br>예불</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>평화와 깨달음을 기원하는 시간, 예불</h4>
+							<p>사찰의 예불은 하루의 시작과 끝을 알리는 가장 기본적인 의식입니다. 어둠이 가시지 않은 새벽 고요한 산사를 깨우는 범종 소리가 울려 퍼지고 법당 안 스님들의 예불 소리와 함께 본격적인 하루가 시작됩니다. 또 해가 넘어갈 때 웅장한 범종 소리가 다시 한 번 예불 시간을 알리면 산사의 모든 이들이 함께 예불을 올립니다. 몸과 입과 마음으로 온 세상이 평화로워지기를 기원하는 매우 특별한 시간입니다.</p>
+							<span class="hash">#예불</span>	
+							<span class="hash">#새벽</span>	
+							<span class="hash">#저녁</span>	
+							<span class="hash">#시작과끝</span>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=n8QxuU_MqiQ" class="art_video  wow  fadeInRight" data-fancybox ><img src="http://img.youtube.com/vi/n8QxuU_MqiQ/mqdefault.jpg" alt=""></a>
+				</article><!-- art5 -->
+
+				<article class="art art6">
+					<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>06<br>108배</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>몸과 마음을 다스리는 절 수행, 108배</h4>
+							<p>108가지 번뇌를 참회하고 씻기 위한 수행법으로 절을 할 때마다 108번뇌도 하나씩 내려놓으면서 자신의 어리석음을 반성합니다. 고로 108배 시간은 내 몸을 낮춤으로써 겸손을 배우고, 새로운 마음을 채우는 시간이기도 합니다.</p>
+							<span class="hash">#108배</span>	
+							<span class="hash">#참회</span>	
+							<span class="hash">#고행</span>	
+							<span class="hash">#힘듦</span>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=A3heMqw7cS4" class="art_video  wow  fadeInLeft" data-fancybox ><img src="http://img.youtube.com/vi/A3heMqw7cS4/mqdefault.jpg" alt=""></a>
+				</article><!-- art6 -->
+					
+				<article class="art art7">
+						<div class="art_img"></div>
+					<div class="art_text">
+						<div class="art_title  wow  fadeInDown" data-wow-duration='2s'>07<br>연등 및 염주만들기</div>
+						<div class="art_cont  wow  fadeInDown" data-wow-duration='2s' data-wow-delay='0.5s'>
+							<h4>나와 세상을 밝히는 진리의 등불, 연등만들기</h4>
+							<p>연꽃 모양의 등을 연등이라고 합니다. 얇은 종이로 만든 연꽃잎을 한 장씩 접어서 풀로 붙이면 아름다운 연등이 완성됩니다. 영원히 꺼지지 않는 지혜를 상징하는 연꽃등은 진흙 속에서도 더러움에 물들지 않고 아름답고 깨끗하게 피어나는 연꽃처럼 어리석은 마음을 닦아 깨달음에 이르기를 바라는 마음이 담겨 있습니다. 진흙속에서도 청정하게 피어나는 연꽃처럼 나의 지혜도 피어오르길 기원하며 색색의 한지를 곱게 붙여 연등을 만듭니다.</p>
+							<h4>산란한 마음을 동그랗게, 염주만들기</h4>
+							<p>염주는 깨달음에 대한 기원을 담아 한 알 한 알 구슬을 꿰어 만든 한국불교의 대표적인 기도용품입니다. 염주 알의 수가 적은 것은 단주(短珠)라고 하고, 보통 108개로 되어 있어서 108염주라고 부릅니다. 염주를 돌리며 108가지 번뇌를 소멸시킨다는 뜻이 담겨 있습니다. 직접 만든 나만의 염주를 손안에서 굴리다 보면 흐트러진 마음이 한곳으로 모아져 동그랗게 이어지는 것을 느낄 수 있습니다.</p>
+						</div>
+					</div>
+					<a href="https://www.youtube.com/watch?v=dme5_yJTyoo" class="art_video  wow  fadeInRight" data-fancybox ><img src="http://img.youtube.com/vi/dme5_yJTyoo/mqdefault.jpg" alt=""></a>
+				</article><!-- art7 -->				
+			</div><!-- cont -->
+			<div class="blank"></div>
+			<div class="m_rec">
+				<h2 class="m_rec_tit">"이런 분들께 추천합니다!"</h2>
+				<div class="m_rec_cont">
+					<h4>불교문화를 체험하고 싶으신 분</h4>
+					<p>------------------------------------------------------------------------------------------------------</p>
+				</div>
+				<div class="m_rec_cont">
+					<h4>마음의 안식이 필요하신 분</h4>
+					<p>------------------------------------------------------------------------------------------------------</p>
+					</div>
+				<div class="m_rec_cont">
+					<h4>육체의 휴식이 필요하신 분</h4>
+					<p>------------------------------------------------------------------------------------------------------</p>
+					</div>
+				<div class="m_rec_cont">
+					<h4>생활패턴의 개선이 필요하신 분</h4>
+					<p>------------------------------------------------------------------------------------------------------</p>
+				</div>
+				<button class="qna_btn"><a href="http://rosie52486.dothome.co.kr/xe/gqna">템플스테이 문의하기</a></button>
+			</div><!-- m_rec -->
+		</div><!-- center -->
+	</section>
+
+	<script>
+		wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+	</script>
+
+
+	<footer class="footer">
+		<div class="center">
+			<div class="footer_top">
+				<h1 class="footer_logo"><a href="index.html"></a></h1>
+				<ul class="m_about">
+					<li><a href="#">템플스테이 홍보관 : 02-938-1119</a></li>
+					<li><a href="mailto:hwlee1210@naver.com">이메일 : goldentemplestay@gmail.com</a></li>
+					<li><a href="https://v4.map.naver.com/local/siteview.nhn?code=60645536">주소: 서울특별시 노원구 상계동 357-2</a></li>
+				</ul>
+				<ul class="about">
+					<li><a href="mailto:hwlee1210@naver.com" title="이메일 문의"><img src="img/icon_mail.png" alt="">goldentemplestay@gmail.com</a></li>
+					<li><a href="#" title="전화 문의"><img src="img/icon_phone.png" alt="" >02-938-1119</a></li>
+					<li><a href="https://v4.map.naver.com/local/siteview.nhn?code=60645536" target="_blank" title="지도 보기"><img src="img/icon_map.png" alt="">서울특별시 노원구 상계동 357-2</a></li>
+				</ul>
+				<ul class="footer_gnb">
+					<li><a href="templestay.html">템플스테이</a></li>
+					<li><a href="temple1.html">사찰</a>
+						<ul>
+							<li><a href="temple1.html">불국사</a></li>
+							<li><a href="temple2.html">기림사</a></li>
+							<li><a href="temple3.html">골굴사</a></li>
+						</ul>
+					</li>
+					<li><a href="book.html">예약하기</a></li>
+					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="http://rosie52486.dothome.co.kr/xe/gqna">Q&A</a></li>
+				</ul>
+			</div><!-- footer_top -->
+			<div class="footer_bottom">
+				<ul class="personal">
+					<li><a href="#">소개<span>|</span></a></li>  
+					<li><a href="#">저작권 안내<span>|</span></a></li>
+					<li><a href="#">개인정보 처리방침<span>|</span></a></li>
+					<li><a href="#">이용약관<span>|</span></a></li>
+					<li><a href="#">FAQ<span>|</span></a></li>
+					<li><a href="#">연락처</a></li>
+				</ul>
+				<p class="copy">
+					Copyright 2020 &copy; Golden Templestay. All Rights Reserved.
+				</p>
+			</div><!-- footer_bottom -->
+		</div><!-- center -->
+	</footer>
+	<div class="top_button"><a href="#top">▲TOP</a></div>
+	
+        <div style="display: none;" id="animatedModal" class="animated-modal">
+          <input type="text" placeholder="아이디 입력"><br>
+          <input type="password" placeholder="비밀번호 입력"><br>
+		  <button class="login">로그인</button><br>
+		  <ul class="signin">
+			<li><a href="">회원가입</a></li>
+			<li><a href="">아이디 찾기</a></li>
+			<li><a href="">비밀번호  찾기</a></li>
+		  </ul>
+        </div>
+
+ </body>
+</html>

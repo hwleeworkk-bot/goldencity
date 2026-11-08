@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>0212_circle.html</title>
+ </head>
+ <body>
+	<div class="box">
+		<div class="ele circle"></div>
+		<div class="ele rect"></div>
+		<div class="ele tri"></div>
+		<div class="ele plus">+</div>
+		<div class="ele text">HYEWON LEE</div>
+	</div>
+	<style>
+		*{padding: 0; margin: 0; -webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;}
+		body{width: 100%; height: 100vh;
+			background: url(imgs/bokeh.jpg) no-repeat;
+			background-size: 100% 100%;
+			background-position: center center;}
+
+
+		.box{position: relative;}
+		.box>.ele{position: absolute;}
+		.box>.circle{-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#db186f+0,8315c6+100,d6445f+100 */
+			background: #db186f; /* Old browsers */
+			background: -moz-linear-gradient(-45deg,  #db186f 0%, #8315c6 100%, #d6445f 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg,  #db186f 0%,#8315c6 100%,#d6445f 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg,  #db186f 0%,#8315c6 100%,#d6445f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db186f', endColorstr='#d6445f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			animation: circle 10s ease-in infinite alternate none;
+			}
+			
+			@keyframes circle {
+					0%{
+						left: 10vw;
+						top: 50vh;}
+
+					50%{
+						left: 15vw;
+						top: 70vh;}
+
+					100%{transform: rotate(360deg);
+						left: 20vw;
+						top: 40vh;}
+			}
+
+
+		.box>.rect{
+			width: 30px; 
+			height: 30px; 
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffe763+0,e73827+100 */
+			background: #ffe763; /* Old browsers */
+			background: -moz-linear-gradient(-45deg,  #ffe763 0%, #e73827 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg,  #ffe763 0%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg,  #ffe763 0%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe763', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			top: 30vh;
+			left: 40vw;
+
+			animation: rect 5s ease-in infinite alternate none;
+
+			}
+
+		@keyframes rect {
+					0%{top: 30vh;
+						left: 40vw;}
+
+					30%{top: 20vh;
+						left: 50vw;}
+
+					70%{top: 23vh;
+						left: 47vw;}
+
+					100%{top: 25vh;
+						left: 45vw;
+						transform: rotate(180deg);
+						}
+			}
+
+
+		.box>.tri{width: 0;
+			height: 0;
+			border-width: 15px;
+			border-style: solid;
+			border-color: transparent transparent navy transparent;
+			transform: rotate(-135deg);
+			top: 50vh;
+			left: 50vw;}
+
+		.box>.plus{font-size: 50px;
+			color: skyblue;
+			font-weight: bold;
+			top: 35vh;
+			left: 70vw;
+			
+			animation: plus 10s ease-in ;}
+
+		@keyframes plus {
+					0%{}
+
+					100%{
+						transform: rotate(360deg);
+						}
+			}
+
+		.box>.text{font-size: 50px;
+			font-weight: bold;
+			color: #666;
+			
+			top: 40vh;
+			left: 75vw;}
+
+
+		
+	</style>
+ </body>
+</html>
