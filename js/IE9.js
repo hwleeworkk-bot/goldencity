@@ -1,6 +1,6 @@
 /*
   IE7/IE8/IE9.js - copyright 2004-2010, Dean Edwards
-  http://code.google.com/p/ie7-js/
+  https://code.google.com/p/ie7-js/
   http://www.opensource.org/licenses/mit-license.php
 */
 
@@ -8,11 +8,11 @@
 
 /* credits/thanks:
   Shaggy, Martijn Wargers, Jimmy Cerra, Mark D Anderson,
-  Lars Dieckow, Erik Arvidsson, Gellért Gyuris, James Denny,
+  Lars Dieckow, Erik Arvidsson, Gellï¿½rt Gyuris, James Denny,
   Unknown W Brackets, Benjamin Westfarer, Rob Eberhardt,
   Bill Edney, Kevin Newman, James Crompton, Matthew Mastracci,
   Doug Wright, Richard York, Kenneth Kolano, MegaZone,
-  Thomas Verelst, Mark 'Tarquin' Wilton-Jones, Rainer Åhlfors,
+  Thomas Verelst, Mark 'Tarquin' Wilton-Jones, Rainer ï¿½hlfors,
   David Zulaica, Ken Kolano, Kevin Newman, Sjoerd Visscher,
   Ingo Chao
 */
@@ -89,7 +89,7 @@ function hasClass(element, className){
 // -----------------------------------------------------------------------
 
 
-// This is a cut-down version of base2 (http://code.google.com/p/base2/)
+// This is a cut-down version of base2 (https://code.google.com/p/base2/)
 
 var _slice = Array.prototype.slice;
 
